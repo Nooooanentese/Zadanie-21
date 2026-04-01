@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacje i Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+    <h1>Informacje i Quiz</h1>
+</header>
+ 
+<nav>
+    <a href="index.html">Strona Główna</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="info.html">Informacje + Quiz</a>
+</nav>
+ 
+<section>
+    <h2>Podstawowe informacje</h2>
+ 
+    <!-- Lista z najważniejszymi informacjami -->
+    <ul>
+        <li>Kraj: Japonia</li>
+        <li>Liczba kotów: więcej niż ludzi</li>
+        <li>Klimat: spokojny, morski</li>
+    </ul>
+ 
+    <h2>Quiz - Czy znasz Wyspę Kotów?</h2>
+ 
+    <div class="quiz">
+        <p>1. W jakim kraju znajduje się Wyspa Kotów?</p>
+ 
+        <!-- true oznacza że to dobra odpowiedź -->
+        <button onclick="sprawdz(this, true)">Japonia</button>
+        <button onclick="sprawdz(this, false)">Włochy</button>
+        <button onclick="sprawdz(this, false)">Hiszpania</button>
+    </div>
+
+<div class="quiz">
+        <p>2. Czy na tej wyspie jest więcej ludzi niż kotów?</p>
+ 
+        <button onclick="sprawdz(this, false)">Tak</button>
+        <button onclick="sprawdz(this, true)">Nie</button>
+    </div>
+
+<div class="quiz">
+        <p>2. Jaka panuje tam atmosfera?</p>
+ 
+        <button onclick="sprawdz(this, false)">Gorąca i chaotyczna</button>
+        <button onclick="sprawdz(this, true)">Spokojna i morska</button></button>
+        <button onclick="sprawdz(this, false)">Lodowata jak zima</button>
+    </div>
+ 
+    <!-- Reset usuwa kolory z przycisków -->
+    <button onclick="resetQuiz()">Resetuj pytanie</button>
+ 
+</section>
+ 
+<footer>
+    <p>Koniec strony</p>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>

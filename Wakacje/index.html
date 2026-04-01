@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyspa Kotów - Wakacje Marzeń</title>
+ 
+    <!-- Podpinam tutaj plik CSS żeby strona nie była nijaka -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+    <!-- To jest główny nagłówek strony -->
+    <h1>Moje wymarzone wakacje - Wyspa Kotów</h1>
+</header>
+ 
+<!-- Proste menu żeby dało się przechodzić między podstronami -->
+<nav>
+    <a href="index.html">Strona Główna</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="info.html">Informacje + Quiz</a>
+</nav>
+ 
+<section>
+    <h2>Gdzie to jest?</h2>
+    <p>
+        Wyspa Kotów to miejsce w Japonii, gdzie żyje więcej kotów niż ludzi.
+        To spokojna, mała wyspa nad morzem.
+    </p>
+ 
+    <h2>Dlaczego chciałabym tam pojechać?</h2>
+    <p>
+        Bo lubię koty i spokojne miejsca. To idealne miejsce na odpoczynek.
+    </p>
+    <h2>Dodatkowe informacje:</h2>
+<p>Aoshima – wyspa na Morzu Wewnętrznym należąca do prefektury Ehime, znajdująca się w niewielkiej odległości od japońskiego archipelagu Sikoku. Wyspa znana jest również jako Wyspa Kotów (猫の島 Neko no shima) ze względu na ich dużą populację, która przewyższa liczbę mieszkańców, dzięki czemu wyspa przyciąga turystów i podróżników</p>
+<br>
+<p>Atrakcje: Karmienie kotów, koty. Więcej kotów.</p>	
+    <!-- Po kliknięciu wywołuje się funkcja z JS która losuje ciekawostkę -->
+    <button onclick="pokazCiekawostke()">Pokaż ciekawostkę</button>
+ 
+    <!-- Tutaj JavaScript wstawia tekst -->
+<div id = "boxCiekawostka">
+    <p id="ciekawostka"></p>
+</div>
+</section>
+ 
+<footer>
+    <p>Nie ma sposobu kontaktu z administratorem strony, bo go też nie ma</p>
+</footer>
+ 
+<!-- Na końcu podpinam JS żeby wszystko działało -->
+<script src="script.js"></script>
+</body>
+</html>

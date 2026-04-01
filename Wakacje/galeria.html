@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria - Wyspa Kotów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+    <h1>Galeria zdjęć</h1>
+</header>
+ 
+<nav>
+    <a href="index.html">Strona Główna</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="info.html">Informacje + Quiz</a>
+</nav>
+ 
+<section class="galeria">
+ 
+    <!-- Guzik co cofa zdjęcie -->
+    <button onclick="poprzednieZdjecie()">Poprzednie</button>
+ 
+    <!-- Kontener slidera, tutaj będzie zmieniane zdjęcie -->
+    <div class="slider">
+        <img id="sliderImage" src="ogryzek1.jpg">
+    </div>
+ 
+    <!-- Guzik do następnego zdjęcia -->
+    <button onclick="nastepneZdjecie()">Następne</button>
+ 
+</section>
+ 
+<footer>
+    <p>Galeria zdjęć z Wyspy Kotów</p>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
